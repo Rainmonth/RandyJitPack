@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Random;
 
 /**
@@ -32,7 +33,7 @@ public class FileLog {
 
         try {
             OutputStream outputStream = new FileOutputStream(file);
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream, "UTF-8");
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream, StandardCharsets.UTF_8);
             outputStreamWriter.write(msg);
             outputStreamWriter.flush();
             outputStream.close();

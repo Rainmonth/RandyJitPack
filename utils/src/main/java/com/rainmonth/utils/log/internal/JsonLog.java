@@ -2,7 +2,8 @@ package com.rainmonth.utils.log.internal;
 
 import android.util.Log;
 
-import com.rainmonth.common.utils.log.LogUtils;
+
+import com.rainmonth.utils.log.LogUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

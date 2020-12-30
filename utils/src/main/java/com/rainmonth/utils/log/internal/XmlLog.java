@@ -2,7 +2,7 @@ package com.rainmonth.utils.log.internal;
 
 import android.util.Log;
 
-import com.rainmonth.common.utils.log.LogUtils;
+import com.rainmonth.utils.log.LogUtils;
 
 import java.io.StringReader;
 import java.io.StringWriter;
