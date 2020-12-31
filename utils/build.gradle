@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-// 应用maven产检
+// 应用maven插件
 apply plugin: 'com.github.dcendents.android-maven'
 // 声明group
 group = 'com.github.rainmonth'
@@ -34,4 +34,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation rootProject.ext.gson
 }
