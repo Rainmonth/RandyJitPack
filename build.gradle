@@ -22,7 +22,18 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url 'https://jitpack.io' }
+//        maven { url 'https://jitpack.io' }
+        // 发布到本地配置
+//        maven { url('../repository')}
+        //私有服务器仓库地址
+        maven {
+            url 'http://localhost:8081/repository/maven-releases/'
+            //认证用户和密码
+            credentials {
+                username 'admin'
+                password 'admin123'
+            }
+        }
     }
 }
 
